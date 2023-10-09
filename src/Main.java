@@ -38,15 +38,15 @@ public class Main {
         System.out.printf("\n");
 //Задача 3
         int l = number.length - 1;
-        for (; l>=0;l--) {
+        for (; l >= 0; l--) {
             System.out.print(number[l]);
             if (l > 0) {
                 System.out.print(", ");
             }
-            }
+        }
         System.out.printf("\n");
         int k = number1.length - 1;
-        for (; k>=0;k--) {
+        for (; k >= 0; k--) {
             System.out.print(number1[k]);
             if (k > 0) {
                 System.out.print(", ");
@@ -54,7 +54,7 @@ public class Main {
         }
         System.out.printf("\n");
         int o = number1.length - 1;
-        for (; o>=0;o--) {
+        for (; o >= 0; o--) {
             System.out.print(fruits[(int) o]);
             if (o > 0) {
                 System.out.print(", ");
@@ -62,14 +62,15 @@ public class Main {
         }
         System.out.printf("\n");
 //Задача 4
-        int u = 0;
-        for (; u < number.length; u++) {
+        for (int u = 0; u < number.length; u++) {
+            if (number[u] % 2 != 0) {
                 number[u]++;
-                if (u > 0) {
-                    System.out.print(", ");
-                }
-                System.out.print(number[u]);
-            number[1] = number[1] - 1;
             }
+            if (u > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(number[u]);
+        }
         }
     }
+
